@@ -1,7 +1,7 @@
 $(function () {
-    $(".openbtn4").click(function (){
+    $(window).scroll (function () {
         $("nav.floating").stop().animate(
-            {"top": $(window).scrollTop() + 100},
+            {"top": $(window).scrollTop() + 130},
         500);
     });
 });
