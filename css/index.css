@@ -37,9 +37,9 @@ nav.floating {
     margin-right: auto;
     padding-left: 40px;
     padding-right: 80px;
-    color:#ffffff;
+    color:aqua;
     font-weight: bold;
-    text-shadow: 1px 1px 10px #4b2c14;
+    text-shadow: 1px 1px 5px #01191d;
 }
 
 .first-view-text h1{

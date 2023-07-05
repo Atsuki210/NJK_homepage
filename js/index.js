@@ -17,3 +17,13 @@ $(".openbtn4").click(function () {
         $menu.classList.add('is-show');
     }
 });
+
+window.addEventListener('scroll', function(){
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementByClassName("header").style.height = "120px";
+        document.getElementByClassName("header-inner").style.height = "110px";
+    }else{
+        document.getElementByClassName("header").style.height = "80px";
+        document.getElementByClassName("header-inner").style.height = "70px";
+    }
+});
