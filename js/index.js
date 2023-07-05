@@ -1,7 +1,7 @@
 $(function () {
-    $(".openbtn4").click(function (){
+    $(window).scroll (function () {
         $("nav.floating").stop().animate(
-            {"top": $(window).scrollTop() + 100},
+            {"top": $(window).scrollTop() + 130},
         500);
     });
 });
@@ -15,5 +15,15 @@ $(".openbtn4").click(function () {
     }
     else {
         $menu.classList.add('is-show');
+    }
+});
+
+window.addEventListener('scroll', function(){
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementByClassName("header").style.height = "120px";
+        document.getElementByClassName("header-inner").style.height = "110px";
+    }else{
+        document.getElementByClassName("header").style.height = "80px";
+        document.getElementByClassName("header-inner").style.height = "70px";
     }
 });

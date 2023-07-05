@@ -7,9 +7,21 @@ nav.floating {
     background-color: #d0d0d0;    
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 120px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+}
+
 .first-view {
     height: calc(100vh - 110px);
-    background-image: url(../images/index/bg_main.jpg);
+    background-image: url(../images/index/ページ構成草案（模様）.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -25,9 +37,9 @@ nav.floating {
     margin-right: auto;
     padding-left: 40px;
     padding-right: 80px;
-    color:#ffffff;
+    color:aqua;
     font-weight: bold;
-    text-shadow: 1px 1px 10px #4b2c14;
+    text-shadow: 1px 1px 5px #01191d;
 }
 
 .first-view-text h1{
