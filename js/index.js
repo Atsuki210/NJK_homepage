@@ -6,6 +6,10 @@ $(function () {
     });
 });
 
+$(".floating").click(function scroll_top() {
+    window.scroll({ top: 0, behavior: "smooth" });
+});
+
 $(".openbtn4").click(function () {
     var $menu = document.querySelector('.header-site-menu');
     $(this).toggleClass('active');
@@ -18,7 +22,7 @@ $(".openbtn4").click(function () {
     }
 });
 
-window.addEventListener('scroll', function(){
+$(window.addEventListener('scroll', function(){
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementByClassName("header").style.height = "120px";
         document.getElementByClassName("header-inner").style.height = "110px";
@@ -26,4 +30,4 @@ window.addEventListener('scroll', function(){
         document.getElementByClassName("header").style.height = "80px";
         document.getElementByClassName("header-inner").style.height = "70px";
     }
-});
+}));
