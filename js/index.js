@@ -22,12 +22,7 @@ $(".openbtn4").click(function () {
     }
 });
 
-$(window.addEventListener('scroll', function(){
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-        document.getElementByClassName("header").style.height = "120px";
-        document.getElementByClassName("header-inner").style.height = "110px";
-    }else{
-        document.getElementByClassName("header").style.height = "80px";
-        document.getElementByClassName("header-inner").style.height = "70px";
-    }
-}));
+lightbox.option({
+    'wrapAround': true,//グループ最後の写真の矢印をクリックしたらグループ最初の写真に戻る
+    'albumLabel': ' %1 / total %2 '//合計枚数中現在何枚目かというキャプションの見せ方を変更できる
+});

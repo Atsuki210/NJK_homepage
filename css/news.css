@@ -87,6 +87,37 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 
+.main {
+    padding-top: 120px;;
+}
+
+/*==================================================
+ギャラリーのためのcss
+===================================*/
+.gallery{
+    columns: 4;/*段組みの数*/
+    padding:0 15px;/*ギャラリー左右に余白をつける*/
+    margin:0;
+    }
+    
+    .gallery li {
+        margin-bottom: 20px;/*各画像下に余白をつける*/
+    list-style:none;
+    }
+    
+    /*ギャラリー内のイメージは横幅100%にする*/
+    .gallery img{
+        width:100%;
+        height:auto;
+        vertical-align: bottom;/*画像の下にできる余白を削除*/}
+    
+    
+    @media only screen and (max-width: 768px) {
+        .gallery{
+            columns: 2;
+        }	
+}
+
 @media (max-width: 800px) {
     .site-menu ul {
         display: block;
@@ -167,7 +198,7 @@ img {
         display: inline-block;
         transition: all .2s;/*アニメーションの設定*/
         position: absolute;
-        left: 13px;
+        left: 11px;
         height: 2px;
         border-radius: 5px;
         background: #fff;
@@ -223,6 +254,10 @@ img {
         left:-3px;
     }
     /*==========ハンバーガーここまで==========*/
+
+    .gallery{
+        columns:3;
+    }
 }
 
 .footer {
