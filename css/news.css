@@ -1,4 +1,29 @@
 @charset "utf-8";
+
+nav.floating {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 50px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 120px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+}
+
+.lead{
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
 *,
 ::before,
 ::after{
@@ -61,6 +86,7 @@ img {
 .site-menu ul li a {
     font-family: 'Open Sans', sans-serif;
 }
+
 @media (max-width: 800px) {
     .site-menu ul {
         display: block;
@@ -71,13 +97,17 @@ img {
         margin-top: 20px;
     }
 
+    .site-menu a {
+        color: #ffffff;
+    }
+
     .header {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         background-color: #ffffff;
-        height: 50px;
+        height: 70px;
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     }
@@ -86,14 +116,29 @@ img {
         padding-left: 20px;
         padding-right: 20px;
         height: 100%;
+        position: relative;
     }
 
     .header-logo {
         width: 100px;
     }
 
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#4c6473;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+
+    .header-site-menu.is-show{
+        display: block;
+    }
     .main {
-        padding-top: 50px;
+        padding-top: 50px;;
     }
 
     .footer-logo {
@@ -103,7 +148,83 @@ img {
     .copyright {
         margin-top: 50px;
     }
+
+    /*==========ハンバーガーメニューここから==========*/
+
+    /*ボタン外側*/
+    .openbtn4{
+        display: block;
+        position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+        background:#4c6473;
+        cursor: pointer;
+        width: 44px;
+        height:44px;
+        border-radius: 5px;
+    }
+
+    /*ボタン内側*/
+    .openbtn4 span{
+        display: inline-block;
+        transition: all .2s;/*アニメーションの設定*/
+        position: absolute;
+        left: 13px;
+        height: 2px;
+        border-radius: 5px;
+        background: #fff;
+        width: 45%;
+    }
+
+    .openbtn4 span:nth-of-type(1) {
+        top:13px; 
+    }
+    
+    .openbtn4 span:nth-of-type(2) {
+        top:19px;
+    }
+
+    .openbtn4 span:nth-of-type(3) {
+        top:25px;
+    }
+
+    .openbtn4 span:nth-of-type(3)::after {
+        content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+        position: absolute;
+        top:5px;
+        left:-5px;
+        color: #fff;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+    }
+    
+    /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+    .openbtn4.active span:nth-of-type(1) {
+        top: 14px;
+        left: 15px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+    
+    .openbtn4.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .openbtn4.active span:nth-of-type(3){
+        top: 26px;
+        left: 15px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+    
+    .openbtn4.active span:nth-of-type(3)::after {
+        content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+        transform: translateY(0) rotate(-45deg);
+        top:5px;
+        left:-3px;
+    }
+    /*==========ハンバーガーここまで==========*/
 }
+
 .footer {
     color: #ffffff;
     background-color: #4c6473;
@@ -116,7 +237,7 @@ img {
 
 .footer-logo {
     display: block;
-    width: 235px;
+    width: 500px;
     margin-top: 90px;
 }
 
@@ -125,3 +246,4 @@ img {
     font-weight: bold;
     margin-top: 90px;
 }
+
