@@ -123,6 +123,10 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 
+.main {
+    padding-top: 120px;;
+}
+
 @media (max-width: 800px) {
     .site-menu ul {
         display: block;
