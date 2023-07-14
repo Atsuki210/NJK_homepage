@@ -82,7 +82,7 @@ body{
     font-size: 16bit;
     color: #000000;
     line-height: 1;
-    background-color: #ffffff;
+    background-color: #4c6473;
 }
 
 img {
@@ -124,7 +124,66 @@ img {
 }
 
 .main {
-    padding-top: 120px;;
+    padding-top: 120px;
+}
+
+.exam-way {
+    margin: 30px;
+}
+
+
+.exam-way li h3{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.exam-way li p{
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.exam-way li{
+    margin: 10px;
+    padding: 5px;
+    width: 350px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.exam-logo{
+    display: block;
+    opacity: 50%;
+    position: relative;
+}
+
+.a-way{
+    background-color: crimson;
+    background: linear-gradient(to right,orangered, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right, orangered, rgba(76,100,115,0.8));
+}
+.b-way{
+    background-color: royalblue;
+    background: linear-gradient(to right,royalblue, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,royalblue, rgba(76,100,115,0.8));
+}
+
+.c-way{
+    background-color: mediumseagreen;
+    background: linear-gradient(to right, mediumseagreen, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,mediumseagreen, rgba(76,100,115,0.8));
+}
+
+.p-way{
+    background-color: violet;
+    background: linear-gradient(to right, violet,rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,violet,rgba(76,100,115,0.8));
+}
+
+.s-way{
+    background-color: yellow;
+    background: linear-gradient(to right, yellow, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,yellow, rgba(76,100,115,0.8));
 }
 
 @media (max-width: 800px) {
