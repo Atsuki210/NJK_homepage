@@ -37,12 +37,23 @@ nav.floating {
     margin-right: auto;
     padding-left: 40px;
     padding-right: 80px;
-    color:aqua;
+    color:#ffffff;
     font-weight: bold;
     text-shadow: 1px 1px 5px #01191d;
 }
 
+.second-view {
+    height: calc(100vh - 110px);
+    background-image: url(../images/banana/cover1.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
 .first-view-text h1{
+    color:#ffffff;
     font-family: 'Montserrat',sans-serif;
     font-size: 56px;
     line-height: 72px;
@@ -53,6 +64,12 @@ nav.floating {
     font-size: 18px;
     margin-top: 20px;
     text-align: center;
+}
+
+.first-view-text listt{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: start;
 }
 
 .lead{
