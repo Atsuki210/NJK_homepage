@@ -78,3 +78,60 @@
     margin-right: auto;
     align-items: flex-start;
 }
+
+
+
+.column {
+    height: 100vh;
+    width: 100%;
+    text-align: left;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+    .info {
+        margin-bottom: 10%;
+        padding-left: 2em;
+        padding-right: 2em;
+    }
+    h2 {
+        font-size: 2rem;
+        text-indent: 1rem;
+        font-weight: bold;
+        line-height: 2;
+    }
+    p {
+        font-size: 1rem;
+        text-indent: 1rem;
+        line-height: 1.5;
+    }
+    a {
+        font-size: 2rem;
+        background: #0bd;
+        border-radius: 5px;
+        padding: 10px 20px;
+        color: #fff;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 18px;
+    }
+    a:hover {
+        background: #0090aa;
+    }
+.cat1 {
+        background: url(../images/members/john.jpg) no-repeat top center;
+        background-size: 60%;
+        margin-top: 10%;
+        color: #00000000;
+    }
+.cat2 {
+        background: url(../images/members/white.jpg) no-repeat top center;
+        background-size: 100%;
+        color: #000000;
+    }
+
+@media all and (min-width: 800px) {
+    .wrapper {
+        display: flex;
+    }
+}
