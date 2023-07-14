@@ -1,0 +1,309 @@
+/*!
+*ress.css窶｢v1.2.2
+*MITLicense
+*github.com/filipelinhares/ress
+*/
+
+/*#=================================================================
+#Globalselectors
+#=================================================================*/
+
+html{
+    box-sizing:border-box;
+    overflow-y:scroll;/*Allbrowserswithoutoverlayingscrollbars*/
+    -webkit-text-size-adjust:100%;/*iOS8+*/
+}
+    
+    *,
+::before,
+::after{
+    background-repeat:no-repeat;/*Set`background-repeat:no-repeat`toallelementsandpseudoelements*/
+    box-sizing:inherit;
+}
+    
+::before,
+::after{
+    text-decoration:inherit;/*Inherittext-decorationandverticalalignto::beforeand::afterpseudoelements*/
+    vertical-align:inherit;
+}
+    
+*{
+    padding:0;/*Reset`padding`and`margin`ofallelements*/
+    margin:0;
+}
+    
+    /*#=================================================================
+    #Generalelements
+    #=================================================================*/
+    
+    /*AddthecorrectdisplayiniOS4-7.*/
+audio:not([controls]){
+    display:none;
+    height:0;
+}
+    
+hr{
+    overflow:visible;/*ShowtheoverflowinEdgeandIE*/
+}
+    
+    /*
+    *Correct`block`displaynotdefinedforanyHTML5elementinIE8/9
+    *Correct`block`displaynotdefinedfor`details`or`summary`inIE10/11
+    *andFirefox
+    *Correct`block`displaynotdefinedfor`main`inIE11
+    */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary{
+    display:block;
+}
+    
+summary{
+    display:list-item;/*Addthecorrectdisplayinallbrowsers*/
+}
+    
+small{
+    font-size:80%;/*Setfont-sizeto80%in`small`elements*/
+}
+    
+[hidden],
+template{
+    display:none;/*AddthecorrectdisplayinIE*/
+}
+    
+abbr[title]{
+    border-bottom:1pxdotted;/*Addaborderedunderlineeffectinallbrowsers*/
+    text-decoration:none;/*RemovetextdecorationinFirefox40+*/
+}
+    
+a{
+    background-color:transparent;/*RemovethegraybackgroundonactivelinksinIE10*/
+    -webkit-text-decoration-skip:objects;/*RemovegapsinlinksunderlineiniOS8+andSafari8+*/
+}
+    
+a:active,
+a:hover{
+    outline-width:0;/*Removetheoutlinewhenhoveringinallbrowsers*/
+}
+    
+code,
+kbd,
+pre,
+samp{
+    font-family:monospace,monospace;/*Specifythefontfamilyofcodeelements*/
+}
+    
+b,
+strong{
+    font-weight:bolder;/*Correctstylesetto`bold`inEdge12+,Safari6.2+,andChrome18+*/
+}
+    
+dfn{
+    font-style:italic;/*AddressstylingnotpresentinSafariandChrome*/
+}
+    
+/*AddressstylingnotpresentinIE8/9*/
+mark{
+    background-color:#ff0;
+    color:#000;
+}
+    
+/*https://gist.github.com/unruthless/413930*/
+sub,
+sup{
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline;
+}
+    
+sub{bottom:-0.25em;}
+    
+sup{top:-0.5em;}
+
+/*#=================================================================
+#Forms
+#=================================================================*/
+input{border-radius:0;}
+    
+/*Applycursorpointertobuttonelements*/
+button,
+    [type="button"],
+    [type="reset"],
+    [type="submit"],
+    [role="button"]{
+    cursor:pointer;
+}
+    
+    /*Replacepointercursorindisabledelements*/
+[disabled]{cursor:default;}
+    
+[type="number"]{width:auto;/*Firefox36+*/}
+    
+[type="search"]{-webkit-appearance:textfield;/*Safari8+*/}
+    
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration{
+    -webkit-appearance:none;/*Safari8*/
+}
+    
+textarea{
+    overflow:auto;/*InternetExplorer11+*/
+    resize:vertical;/*Specifytextarearesizability*/
+}
+    
+button,
+input,
+optgroup,
+select,
+textarea{
+    font:inherit;/*Specifyfontinheritanceofformelements*/
+}
+    
+optgroup{
+    font-weight:bold;/*Restorethefontweightunsetbythepreviousrule.*/
+}
+    
+button{
+    overflow:visible;/*Address`overflow`setto`hidden`inIE8/9/10/11*/
+}
+    
+/*RemoveinnerpaddingandborderinFirefox4+*/
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner{
+    border-style:0;
+    padding:0;
+}
+    
+/*Replacefocusstyleremovedintheborderresetabove*/
+button:-moz-focusring,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner{
+    outline:1pxdottedButtonText;
+}
+    
+button,
+html[type="button"],/*PreventaWebKitbugwhere(2)destroysnative`audio`and`video`controlsinAndroid4*/
+[type="reset"],
+[type="submit"]{
+    -webkit-appearance:button;/*CorrecttheinabilitytostyleclickabletypesiniOS*/
+}
+    
+button,
+select{
+    text-transform:none;/*Firefox40+,InternetExplorer11-*/
+}
+    
+/*Removethedefaultbuttonstylinginallbrowsers*/
+button,
+input,
+select,
+textarea{
+    background-color:transparent;
+    border-style:none;
+    color:inherit;
+}
+    
+/*Styleselectlikeastandardinput*/
+select{
+    -moz-appearance:none;/*Firefox36+*/
+    -webkit-appearance:none;/*Chrome41+*/
+}
+    
+select::-ms-expand{display:none;/*InternetExplorer11+*/}
+    
+select::-ms-value{color:currentColor;/*InternetExplorer11+*/}
+    
+legend{
+    border:0;/*Correct`color`notbeinginheritedinIE8/9/10/11*/
+    color:inherit;/*Correctthecolorinheritancefrom`fieldset`elementsinIE*/
+    display:table;/*CorrectthetextwrappinginEdgeandIE*/
+    max-width:100%;/*CorrectthetextwrappinginEdgeandIE*/
+    white-space:normal;/*CorrectthetextwrappinginEdgeandIE*/
+}
+    
+::-webkit-file-upload-button{
+    -webkit-appearance:button;/*CorrecttheinabilitytostyleclickabletypesiniOSandSafari*/
+    font:inherit;/*Changefontpropertiesto`inherit`inChromeandSafari*/
+}
+    
+[type="search"]{
+    -webkit-appearance:textfield;/*CorrecttheoddappearanceinChromeandSafari*/
+    outline-offset:-2px;/*CorrecttheoutlinestyleinSafari*/
+}
+    
+/*#=================================================================
+#Specifymediaelementstyle
+#=================================================================*/
+    
+img{border-style:none;/*Removeborderwheninside`a`elementinIE8/9/10*/}
+    
+/*AddthecorrectverticalalignmentinChrome,Firefox,andOpera*/
+progress{vertical-align:baseline;}
+    
+svg:not(:root){overflow:hidden;/*InternetExplorer11-*/}
+    
+audio,
+canvas,
+progress,
+video{
+    display:inline-block;/*InternetExplorer11+,WindowsPhone8.1+*/
+}
+    
+/*#=================================================================
+#Accessibility
+#=================================================================*/
+
+/*Hidecontentfromscreensbutnotscreenreaders*/
+@mediascreen{
+    [hidden~="screen"]{display:inherit;}
+    [hidden~="screen"]:not(:active):not(:focus):not(:target){
+        position:absolute!important;
+        clip:rect(0000)!important;
+    }
+}
+    
+/*Specifytheprogresscursorofupdatingelements*/
+[aria-busy="true"]{
+    cursor:progress;
+}
+    
+/*Specifythepointercursoroftriggerelements*/
+[aria-controls]{
+    cursor:pointer;
+}
+    
+/*Specifytheunstyledcursorofdisabled,not-editable,orotherwiseinoperableelements*/
+[aria-disabled]{
+    cursor:default;
+}
+    
+/*#=================================================================
+#Selection
+#=================================================================*/
+    
+/*Specifytextselectionbackgroundcolorandomitdropshadow*/
+    
+::-moz-selection{
+    background-color:#b3d4fc;/*Requiredwhendeclaring::selection*/
+    color:#000;
+    text-shadow:none;
+}
+    
+::selection{
+    background-color:#b3d4fc;/*Requiredwhendeclaring::selection*/
+    color:#000;
+    text-shadow:none;
+}
