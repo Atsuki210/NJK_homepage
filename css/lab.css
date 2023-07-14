@@ -90,9 +90,10 @@
     justify-content: center;
 }
     .info {
-        margin-bottom: 10%;
+        margin-bottom: 6%;
         padding-left: 2em;
-        padding-right: 2em;
+        padding-right: 1.9em;
+        line-height: 1.5;
     }
     h2 {
         font-size: 2rem;
@@ -104,19 +105,6 @@
         font-size: 1rem;
         text-indent: 1rem;
         line-height: 1.5;
-    }
-    a {
-        font-size: 2rem;
-        background: #0bd;
-        border-radius: 5px;
-        padding: 10px 20px;
-        color: #fff;
-        text-decoration: none;
-        display: inline-block;
-        margin-top: 18px;
-    }
-    a:hover {
-        background: #0090aa;
     }
 .cat1 {
         background: url(../images/members/john.jpg) no-repeat top center;
