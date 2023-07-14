@@ -1,0 +1,348 @@
+@charset "utf-8";
+
+nav.floating {
+    position: absolute;
+    top: 120px;
+    left: 50px;
+    width: 50px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    height: 120px;
+    z-index: 10;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0.95;
+}
+
+.first-view {
+    height: calc(100vh - 110px);
+    background-image: url(../images/index/main1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.first-view-text{
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 80px;
+    color:aqua;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px #01191d;
+}
+
+.first-view-text h1{
+    font-family: 'Montserrat',sans-serif;
+    font-size: 56px;
+    line-height: 72px;
+    text-align: center;
+}
+
+.first-view-text p{
+    font-size: 18px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.lead{
+    max-width: 1200px;
+    margin: 60px auto;
+}
+
+*,
+::before,
+::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul ,ol{
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+body{
+    font-family: sans-serif;
+    font-size: 16bit;
+    color: #000000;
+    line-height: 1;
+    background-color: #4c6473;
+}
+
+img {
+    max-width: 100%;
+}
+
+.header-inner {
+    max-width: 1200px;
+    height: 110px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.toggle-menu-button {
+    display: none;
+}
+
+.header-logo {
+    display:block;
+    width: 170px;
+}
+
+.site-menu ul {
+    display: flex;
+}
+
+.site-menu ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.site-menu ul li a {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.main {
+    padding-top: 120px;
+}
+
+.exam-way {
+    margin: 30px;
+}
+
+
+.exam-way li h3{
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+
+.exam-way li p{
+    font-size: 20px;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+}
+
+.exam-way li{
+    margin: 10px;
+    padding: 5px;
+    width: 350px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+.exam-logo{
+    display: block;
+    opacity: 50%;
+    position: relative;
+}
+
+.a-way{
+    background-color: crimson;
+    background: linear-gradient(to right,orangered, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right, orangered, rgba(76,100,115,0.8));
+}
+.b-way{
+    background-color: royalblue;
+    background: linear-gradient(to right,royalblue, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,royalblue, rgba(76,100,115,0.8));
+}
+
+.c-way{
+    background-color: mediumseagreen;
+    background: linear-gradient(to right, mediumseagreen, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,mediumseagreen, rgba(76,100,115,0.8));
+}
+
+.p-way{
+    background-color: violet;
+    background: linear-gradient(to right, violet,rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,violet,rgba(76,100,115,0.8));
+}
+
+.s-way{
+    background-color: yellow;
+    background: linear-gradient(to right, yellow, rgba(76,100,115,0.8));
+    background: -webkit-linear-gradient(to right,yellow, rgba(76,100,115,0.8));
+}
+
+@media (max-width: 800px) {
+    .site-menu ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu li {
+        margin-top: 20px;
+    }
+
+    .site-menu a {
+        color: #ffffff;
+    }
+
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        height: 70px;
+        z-index: 10;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .header-inner {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 100%;
+        position: relative;
+    }
+
+    .header-logo {
+        width: 100px;
+    }
+
+    .header-site-menu {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color:#4c6473;
+        padding-top: 30px;
+        padding-bottom: 50px;
+        display: none;
+    }
+
+    .header-site-menu.is-show{
+        display: block;
+    }
+    .main {
+        padding-top: 50px;;
+    }
+
+    .footer-logo {
+        margin-top: 60px;
+    }
+
+    .copyright {
+        margin-top: 50px;
+    }
+
+    /*==========ハンバーガーメニューここから==========*/
+
+    /*ボタン外側*/
+    .openbtn4{
+        display: block;
+        position: relative;/*ボタン内側の基点となるためrelativeを指定*/
+        background:#4c6473;
+        cursor: pointer;
+        width: 44px;
+        height:44px;
+        border-radius: 5px;
+    }
+
+    /*ボタン内側*/
+    .openbtn4 span{
+        display: inline-block;
+        transition: all .2s;/*アニメーションの設定*/
+        position: absolute;
+        left: 13px;
+        height: 2px;
+        border-radius: 5px;
+        background: #fff;
+        width: 45%;
+    }
+
+    .openbtn4 span:nth-of-type(1) {
+        top:13px; 
+    }
+    
+    .openbtn4 span:nth-of-type(2) {
+        top:19px;
+    }
+
+    .openbtn4 span:nth-of-type(3) {
+        top:25px;
+    }
+
+    .openbtn4 span:nth-of-type(3)::after {
+        content:"Menu";/*3つ目の要素のafterにMenu表示を指定*/
+        position: absolute;
+        top:5px;
+        left:-5px;
+        color: #fff;
+        font-size: 0.6rem;
+        text-transform: uppercase;
+    }
+    
+    /*activeクラスが付与されると線が回転して×になり、Menu⇒Closeに変更*/
+
+    .openbtn4.active span:nth-of-type(1) {
+        top: 14px;
+        left: 15px;
+        transform: translateY(6px) rotate(-45deg);
+        width: 30%;
+    }
+    
+    .openbtn4.active span:nth-of-type(2) {
+        opacity: 0;
+    }
+    
+    .openbtn4.active span:nth-of-type(3){
+        top: 26px;
+        left: 15px;
+        transform: translateY(-6px) rotate(45deg);
+        width: 30%;
+    }
+    
+    .openbtn4.active span:nth-of-type(3)::after {
+        content:"Close";/*3つ目の要素のafterにClose表示を指定*/
+        transform: translateY(0) rotate(-45deg);
+        top:5px;
+        left:-3px;
+    }
+    /*==========ハンバーガーここまで==========*/
+}
+
+.footer {
+    color: #ffffff;
+    background-color: #4c6473;
+    padding-top: 30px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-logo {
+    display: block;
+    width: 500px;
+    margin-top: 90px;
+}
+
+.copyright {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 90px;
+}
+
