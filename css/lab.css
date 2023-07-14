@@ -66,3 +66,15 @@
         margin-left: 30px;
     }
 }
+
+.labtext {
+    background-image: url(../images/concept/bg-main.jpg);
+    display: flex;
+    justify-content: space-between;
+    width: 930px;
+    max-width: 90%;
+    margin-top: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: flex-start;
+}
