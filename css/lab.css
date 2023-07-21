@@ -99,7 +99,15 @@
         font-size: 1.5rem;
         text-indent: 1rem;
         font-weight: bold;
-        line-height: 2.5;
+        line-height: 1;
+    }
+    h2::after {
+        content: '';
+        display: block;
+        width: 36px;
+        height: 3px;
+        background-color: #000000;
+        margin-top: 20px;
     }
     p {
         font-size: 0.9rem;
