@@ -44,9 +44,8 @@ a {
 body{
     font-family: sans-serif;
     font-size: 16bit;
-    color: #000000;
     line-height: 1;
-    background-color: #ffffff;
+    background-color: #f0f0f0;
 }
 
 img {
@@ -87,38 +86,99 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 
+/*==================================================
+メインcss
+===================================*/
+
 .main {
     padding-top: 120px;;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.main h1{
+    border-bottom: solid 3px black;
+    padding-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    color: black;
+    text-align: center;
+}
+
+.main h2{
+    text-align: left;
+    font-size: 30px;
+    margin-top: 10px;
+}
+.main p li{
+    text-align: left;
+    font-size: 20px;
+    line-height: 110%;
+}
+
+.area h2::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #000000;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.article area{
+    background-color: #ffffff;
+    margin-right: 100px;
 }
 
 /*==================================================
 ギャラリーのためのcss
 ===================================*/
 .gallery{
-    columns: 4;/*段組みの数*/
+    columns:3;/*段組みの数*/
     padding:0 15px;/*ギャラリー左右に余白をつける*/
     margin:0;
-    }
+}
     
-    .gallery li {
-        margin-bottom: 20px;/*各画像下に余白をつける*/
+.gallery li {
+    margin-bottom: 20px;/*各画像下に余白をつける*/
     list-style:none;
-    }
-    
-    /*ギャラリー内のイメージは横幅100%にする*/
-    .gallery img{
-        width:100%;
-        height:auto;
-        vertical-align: bottom;/*画像の下にできる余白を削除*/}
-    
-    
-    @media only screen and (max-width: 768px) {
-        .gallery{
-            columns: 2;
-        }	
 }
 
+/*ギャラリー内のイメージは横幅100%にする*/
+.gallery img{
+    width:100%;
+    height:auto;
+    vertical-align: bottom;/*画像の下にできる余白を削除*/
+}
+
+.list_item{
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.list_item > div > time{
+    font-size: 50%;
+    color: #394b56;
+}
+.list_item > div > h3{
+    margin-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/*==================================================
+スマホサイズでの設定
+===================================*/
+
 @media (max-width: 800px) {
+    nav.floating {
+        position: absolute;
+        top: 80px;
+        left: 50px;
+        width: 50px;
+    }
+
     .site-menu ul {
         display: block;
         text-align: center;
@@ -256,11 +316,12 @@ img {
     /*==========ハンバーガーここまで==========*/
 
     .gallery{
-        columns:3;
+        columns:2;
     }
 }
 
 .footer {
+    margin-top: 20px;
     color: #ffffff;
     background-color: #4c6473;
     padding-top: 30px;
