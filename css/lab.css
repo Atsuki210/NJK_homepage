@@ -92,29 +92,36 @@
     .info {
         margin-bottom: 6%;
         padding-left: 2em;
-        padding-right: 1.9em;
-        line-height: 1.5;
+        padding-right: 2.3em;
+        line-height: 1.8;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         text-indent: 1rem;
         font-weight: bold;
-        line-height: 2;
+        line-height: 2.5;
     }
     p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         text-indent: 1rem;
         line-height: 1.5;
     }
+    
 .cat1 {
         background: url(../images/members/john.jpg) no-repeat top center;
-        background-size: 60%;
+        background-size: 70%;
         margin-top: 10%;
         color: #00000000;
     }
 .cat2 {
-        background: url(../images/members/white.jpg) no-repeat top center;
+        background: url(../images/members/tomei.png) no-repeat top center;
         background-size: 100%;
+        color: #000000;
+    }
+.cat3 {
+        background: url(../images/members/shizka.jpg) no-repeat top center;
+        background-size: 70%;
+        margin-top: 6%;
         color: #000000;
     }
 
