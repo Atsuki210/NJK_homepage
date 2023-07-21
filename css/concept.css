@@ -35,6 +35,10 @@
     align-items: flex-start;
 }
 
+.feature h2,p,b{
+    font-family: 'Noto Serif JP', serif;
+}
+
 .feature img {
     max-width: 500px;
     margin-right: 40px;
@@ -60,7 +64,7 @@
     display: block;
     width: 36px;
     height: 3px;
-    background-color: #000000;
+    background-color: #4c6473;
     margin-top: 20px;
 }
 
