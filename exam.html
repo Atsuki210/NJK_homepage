@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <title>名古屋情報科学大学の入学試験について</title>
         <meta name="description" content="ページの概要">
-        <script src="js/toggle-menu.js"></script>
+        <script src="js/news.js"></script>
         <link href="css/exam.css"rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +18,8 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200;400&display=swap" rel="stylesheet">
-
+        <!--===========ハンバーガーメニューを制御するCSSを読み込み===========-->
+        <link rel="stylesheet" type="text/css" href="css/system/hamburger.css">
     </head>
     <body>
         <!--headerここから-->
@@ -27,6 +28,9 @@
                 <a class="header-logo"href="index.html">
                     <img src="images/common/header_logo.jpg" alt="ロゴ">
                 </a>
+                <!--ハンバーガーここから-->
+                <button class="openbtn4"><span></span><span></span><span></span></button>
+                <!--ハンバーガーここまで-->
                 <button class="toggle-menu-button"></button>
                 <div class="header-site-menu">
                     <nav class="site-menu">
@@ -153,5 +157,7 @@
             <p class="copyright"><small>&copy;名城大学情報工学部(嘘)</small></p>
         </footer>
         <!--footerここまで-->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  crossorigin="anonymous"></script>
+        <script src="../NJK_homepage/js/news.js"></script>
     </body>
 </html>
