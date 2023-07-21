@@ -158,6 +158,27 @@ img {
     /*background-color: #2281bc;*/
 }
 
+.col1{
+    background-color: rgba(116, 172, 178, 0.8);
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.col1 th{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.col2{
+    margin: 10px;
+}
+
+.normalTable tbody tr,th{
+    font-family: 'Noto Serif JP', serif;
+    line-height: 28px;
+    margin: 25px;
+}
+
 .side_explation p{
     margin-left: 30px;
 }
@@ -168,6 +189,10 @@ img {
 
 .side_explation{
     margin: 30px;
+}
+
+.sentence{
+    display: flexbox;
 }
 
 .side_explation h1{
@@ -189,7 +214,9 @@ img {
     padding-bottom: 10px;
     padding-top: 5px;
     font-family: 'Noto Serif JP', serif;
-    text-shadow: 1px 1px 10px #6c6969;
+    /*text-shadow: 1px 1px 10px #6c6969;*/
+    line-height: 28px;
+    margin-top: 25px;
 }
 
 .side_explation h1{
@@ -199,13 +226,25 @@ img {
 .side_explation p{
     font-size: 15px;
     font-family: 'Noto Serif JP', serif;
+    font-size: 15px;
+    line-height: 28px;
+    margin-top: 25px;
 }
 
-.exam-way {
+.exam-way,.normalTable {
     display: flexbox;
     margin: 30px;
     /*background-color: antiquewhite;*/
     width: 550px;
+}
+
+.side_explation h3::after {
+    content: '';
+    display: block;
+    width: 36px;
+    height: 3px;
+    background-color: #4c6473;
+    margin-top: 20px;
 }
 
 .exam-way li h3{
@@ -220,12 +259,10 @@ img {
     font-weight: bold;
 }
 
-.exam-way li{
-    margin: 20px;
-    padding: 18px;
-    width: 500px;
-    border-radius: 10px;
-    font-family: 'Noto Sans JP', sans-serif;
+
+
+.sentence li{
+    width: 400px;
 }
 
 .exam-logo{
@@ -235,30 +272,55 @@ img {
 }
 
 .a-way{
+    margin: 20px;
+    padding: 18px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: crimson;
     background: linear-gradient(to right,orangered, rgba(255,255,255,0.8));
     background: -webkit-linear-gradient(to right, orangered, rgba(255,255,255,0.8));
 }
 
 .b-way{
+    margin: 20px;
+    padding: 18px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: royalblue;
     background: linear-gradient(to right,royalblue, rgba(255,255,255,0.8));
     background: -webkit-linear-gradient(to right,royalblue, rgba(255,255,255,0.8));
 }
 
 .c-way{
+    margin: 20px;
+    padding: 18px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: mediumseagreen;
     background: linear-gradient(to right, mediumseagreen, rgba(255,255,255,0.8));
     background: -webkit-linear-gradient(to right,mediumseagreen, rgba(255,255,255,0.8));
 }
 
 .p-way{
+    margin: 20px;
+    padding: 18px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: violet;
     background: linear-gradient(to right, violet,rgba(255,255,255,0.8));
     background: -webkit-linear-gradient(to right,violet,rgba(255,255,255,0.8));
 }
 
 .s-way{
+    margin: 20px;
+    padding: 18px;
+    width: 500px;
+    border-radius: 10px;
+    font-family: 'Noto Sans JP', sans-serif;
     background-color: yellow;
     background: linear-gradient(to right, yellow, rgba(255,255,255,0.8));
     background: -webkit-linear-gradient(to right,yellow, rgba(255,255,255,0.8));

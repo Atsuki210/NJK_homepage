@@ -123,7 +123,7 @@ img {
     display: block;
     width: 36px;
     height: 3px;
-    background-color: #000000;
+    background-color: #4c6473;
     margin-top: 10px;
     margin-bottom: 5px;
 }
@@ -374,5 +374,11 @@ img {
     font-size: 14px;
     font-weight: bold;
     margin-top: 90px;
+}
+
+.article h2,p,li{
+    font-family: 'Noto Serif JP', serif;
+    line-height: 28px;
+    margin-top: 25px;
 }
 
