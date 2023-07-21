@@ -1,5 +1,31 @@
 @charset "utf-8";
 
+.title {
+    height: 310px;
+    background-image: url(../images/exam/woman-ga3737a3d7_1280.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 1px 10px #4b2c14;
+}
+
+.title h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32pt;
+    font-weight: bold;
+}
+
+.title p {
+    font-size: 14px;
+    margin-top: 15px;
+}
+
+
 nav.floating {
     position: absolute;
     top: 120px;
@@ -82,7 +108,7 @@ body{
     font-size: 16bit;
     color: #000000;
     line-height: 1;
-    background-color: #4c6473;
+    /*background-color: #4c6473;*/
 }
 
 img {
@@ -127,14 +153,65 @@ img {
     padding-top: 120px;
 }
 
-.exam-way {
+.list-ways{
+    display: flex;
+    /*background-color: #2281bc;*/
+}
+
+.side_explation p{
+    margin-left: 30px;
+}
+
+.last_paragraph{
+    margin-left: 10px;
+}
+
+.side_explation{
     margin: 30px;
 }
 
+.side_explation h1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.side_explation{
+    background: linear-gradient(to bottom left, rgba(161, 221, 221,0.8) 50%, rgba(255, 255, 255,0.4) 50%);
+}
+
+.subt p{
+    font-size: 20px;
+}
+
+.side_explation h3{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-top: 5px;
+    font-family: 'Noto Serif JP', serif;
+    text-shadow: 1px 1px 10px #6c6969;
+}
+
+.side_explation h1{
+    text-shadow: 1px 1px 10px #6c6969;
+}
+
+.side_explation p{
+    font-size: 15px;
+    font-family: 'Noto Serif JP', serif;
+}
+
+.exam-way {
+    display: flexbox;
+    margin: 30px;
+    /*background-color: antiquewhite;*/
+    width: 550px;
+}
 
 .exam-way li h3{
     font-size: 50px;
     padding-bottom: 10px;
+    text-shadow: 1px 1px 10px #6c6969;
 }
 
 .exam-way li p{
@@ -144,9 +221,9 @@ img {
 }
 
 .exam-way li{
-    margin: 10px;
-    padding: 5px;
-    width: 350px;
+    margin: 20px;
+    padding: 18px;
+    width: 500px;
     border-radius: 10px;
     font-family: 'Noto Sans JP', sans-serif;
 }
@@ -159,31 +236,32 @@ img {
 
 .a-way{
     background-color: crimson;
-    background: linear-gradient(to right,orangered, rgba(76,100,115,0.8));
-    background: -webkit-linear-gradient(to right, orangered, rgba(76,100,115,0.8));
+    background: linear-gradient(to right,orangered, rgba(255,255,255,0.8));
+    background: -webkit-linear-gradient(to right, orangered, rgba(255,255,255,0.8));
 }
+
 .b-way{
     background-color: royalblue;
-    background: linear-gradient(to right,royalblue, rgba(76,100,115,0.8));
-    background: -webkit-linear-gradient(to right,royalblue, rgba(76,100,115,0.8));
+    background: linear-gradient(to right,royalblue, rgba(255,255,255,0.8));
+    background: -webkit-linear-gradient(to right,royalblue, rgba(255,255,255,0.8));
 }
 
 .c-way{
     background-color: mediumseagreen;
-    background: linear-gradient(to right, mediumseagreen, rgba(76,100,115,0.8));
-    background: -webkit-linear-gradient(to right,mediumseagreen, rgba(76,100,115,0.8));
+    background: linear-gradient(to right, mediumseagreen, rgba(255,255,255,0.8));
+    background: -webkit-linear-gradient(to right,mediumseagreen, rgba(255,255,255,0.8));
 }
 
 .p-way{
     background-color: violet;
-    background: linear-gradient(to right, violet,rgba(76,100,115,0.8));
-    background: -webkit-linear-gradient(to right,violet,rgba(76,100,115,0.8));
+    background: linear-gradient(to right, violet,rgba(255,255,255,0.8));
+    background: -webkit-linear-gradient(to right,violet,rgba(255,255,255,0.8));
 }
 
 .s-way{
     background-color: yellow;
-    background: linear-gradient(to right, yellow, rgba(76,100,115,0.8));
-    background: -webkit-linear-gradient(to right,yellow, rgba(76,100,115,0.8));
+    background: linear-gradient(to right, yellow, rgba(255,255,255,0.8));
+    background: -webkit-linear-gradient(to right,yellow, rgba(255,255,255,0.8));
 }
 
 @media (max-width: 800px) {
