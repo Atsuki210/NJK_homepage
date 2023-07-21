@@ -5,6 +5,7 @@ nav.floating {
     top: 120px;
     left: 50px;
     width: 50px;
+    z-index:10;
 }
 
 .header {
@@ -17,6 +18,7 @@ nav.floating {
     z-index: 10;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
     opacity: 0.95;
+    z-index:20;
 }
 
 .lead{
@@ -156,15 +158,37 @@ img {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
 
-.list_item > div > time{
+.list_item time{
     font-size: 50%;
     color: #394b56;
 }
-.list_item > div > h3{
+.list_item h3{
     margin-top: 3px;
     padding-bottom: 10px;
     padding-left: 5px;
     padding-right: 5px;
+}
+
+/*画像を出現させるアニメーションCSS*/
+
+.flipLeft{
+    animation-name: flipLeft;
+    animation-duration:0.5s;
+    animation-fill-mode:forwards;
+    perspective-origin: left center;
+    opacity: 0;
+    }
+    
+    @keyframes flipLeft{
+        from {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(30deg);
+        opacity: 0;
+    }
+    
+    to {
+        transform: perspective(600px) translate3d(0, 0, 0) rotateY(0deg);
+        opacity: 1;
+    }
 }
 
 /*==================================================
@@ -172,11 +196,17 @@ img {
 ===================================*/
 
 @media (max-width: 800px) {
+
+    .main {
+        padding-top: 80px;
+    }
+
     nav.floating {
         position: absolute;
         top: 80px;
         left: 50px;
         width: 50px;
+        z-index:10;
     }
 
     .site-menu ul {
@@ -201,6 +231,7 @@ img {
         height: 70px;
         z-index: 10;
         box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+        z-index:20;
     }
 
     .header-inner {
@@ -223,6 +254,7 @@ img {
         padding-top: 30px;
         padding-bottom: 50px;
         display: none;
+        z-index:20;
     }
 
     .header-site-menu.is-show{
@@ -316,7 +348,8 @@ img {
     /*==========ハンバーガーここまで==========*/
 
     .gallery{
-        columns:2;
+        columns:1;
+        margin-bottom: 100px;
     }
 }
 
