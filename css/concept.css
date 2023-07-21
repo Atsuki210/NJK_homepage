@@ -70,15 +70,15 @@
     margin-top: 25px;
 }
 
+
+
 .card-container{
     background: #33333300;
     color: #000000;
     display: flex;
     margin: 20px auto;
     width: 100%;
-    
 }
-
 
 .card-container a{
     text-decoration: none;
@@ -116,20 +116,10 @@ img{
     vertical-align:bottom;
 }
 
-/*PCサイズ*/
-@media screen and (min-width:650px) {
+@media all and (min-width:1050px) {
     .card-container{
         max-width: 1100px;
         max-height: 1100px;
-    }
-    .card-text h2{
-        font-size: 22px;
-        font-weight: bold;
-        line-height: 30px;
-    }
-    .card-text p{
-        font-size: 15px;
-        line-height: 28px;
-        margin-top: 25px;
+        display: flex;
     }
 }
