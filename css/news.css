@@ -93,6 +93,7 @@ img {
 .main {
     padding-top: 120px;;
     padding-left: 50px;
+    padding-right: 50px;
 }
 
 .main h1{
@@ -112,6 +113,7 @@ img {
 .main p{
     text-align: left;
     font-size: 20px;
+    line-height: 110%;
 }
 
 .area h2::after {
@@ -120,11 +122,13 @@ img {
     width: 36px;
     height: 3px;
     background-color: #000000;
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
 }
 
 .article area{
     background-color: #ffffff;
+    margin-right: 100px;
 }
 
 /*==================================================
