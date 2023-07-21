@@ -133,7 +133,7 @@
         color: #000000;
     }
 
-@media all and (min-width: 800px) {
+@media all and (min-width: 1100px) {
     .wrapper {
         display: flex;
     }
