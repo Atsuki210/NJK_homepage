@@ -110,7 +110,7 @@ img {
     font-size: 30px;
     margin-top: 10px;
 }
-.main p{
+.main p li{
     text-align: left;
     font-size: 20px;
     line-height: 110%;
@@ -155,12 +155,16 @@ img {
 .list_item{
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
 }
+
 .list_item > div > time{
     font-size: 50%;
-    color: #4c6473;
+    color: #394b56;
 }
 .list_item > div > h3{
     margin-top: 3px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 /*==================================================
