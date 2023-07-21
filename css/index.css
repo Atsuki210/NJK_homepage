@@ -140,6 +140,20 @@ img {
     font-family: 'Open Sans', sans-serif;
 }
 
+.site-menu1 ul {
+    display: flex;
+}
+
+.site-menu1 ul li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.site-menu1 ul li a {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
 .main {
     padding-top: 120px;;
 }
@@ -155,6 +169,19 @@ img {
     }
 
     .site-menu a {
+        color: #ffffff;
+    }
+
+    .site-menu1 ul {
+        display: block;
+        text-align: center;
+    }
+
+    .site-menu1 li {
+        margin-top: 20px;
+    }
+
+    .site-menu1 a {
         color: #ffffff;
     }
 
@@ -304,17 +331,5 @@ img {
     margin-top: 90px;
 }
 
-.site-menu1 ul {
-    display: flex;
-}
 
-.site-menu1 ul li {
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
-.site-menu1 ul li a {
-    font-family: 'Open Sans', sans-serif;
-    color: #ffffff;
-}
 
